@@ -1,9 +1,89 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
 
 body {
-  background-color: white;
+  background-color: #ffffff;
   color: black;
   font-family: Verdana;
 }
+
+
+body {
+            background: #0a0a0a url('isoshink.png') repeat;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            color: #0f0;
+            margin: 0;
+            padding: 0;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="0" y="28" font-size="28">👆</text></svg>'), auto;
+        }
+        .header {
+            background: linear-gradient(to right, #ff00ff, #00ffff);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px dotted #fff;
+        }
+        .logo {
+            font-size: 48px;
+            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
+            animation: blink 1s infinite;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .menu a {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #0f0;
+            border-radius: 0;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            background: #0f0;
+            color: #000;
+            transform: rotate(5deg);
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 3px dashed #ff0;
+        }
+        .player {
+            background: #000;
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid #f0f;
+        }
+        .track {
+            color: #0ff;
+            margin: 10px 0;
+        }
+        .merch-item {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .merch-item img {
+            border: 3px solid #f00;
+            image-rendering: pixelated;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        .construction {
+            background: #ff0;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }

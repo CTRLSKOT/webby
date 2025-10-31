@@ -1,92 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <meta charset="utf-8">
     <title>CTRL_SH0T — ОФИЦИАЛЬНЫЙ САЙТ (НЕТ)</title>
-    <style>
-        body {
-            background: #000 url('https://i.imgur.com/X6Qe6D2.gif') repeat;
-            font-family: 'Comic Sans MS', 'Arial', sans-serif;
-            color: #0f0;
-            margin: 0;
-            padding: 0;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="0" y="28" font-size="28">👆</text></svg>'), auto;
-        }
-        .header {
-            background: linear-gradient(to right, #ff00ff, #00ffff);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px dotted #fff;
-        }
-        .logo {
-            font-size: 48px;
-            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
-            animation: blink 1s infinite;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px;
-        }
-        .menu a {
-            background: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border: 2px solid #0f0;
-            border-radius: 0;
-            font-weight: bold;
-        }
-        .menu a:hover {
-            background: #0f0;
-            color: #000;
-            transform: rotate(5deg);
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border: 3px dashed #ff0;
-        }
-        .player {
-            background: #000;
-            padding: 20px;
-            margin: 20px 0;
-            border: 3px solid #f0f;
-        }
-        .track {
-            color: #0ff;
-            margin: 10px 0;
-        }
-        .merch-item {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
-        .merch-item img {
-            border: 3px solid #f00;
-            image-rendering: pixelated;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-        .blink {
-            animation: blink 1s infinite;
-        }
-        .construction {
-            background: #ff0;
-            color: #000;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="/favicon.webp" type="image/webp">
         <meta property="og:title" content="Страница с дискографией">
     <meta property="og:site_name" content="https://ctrlsh0t.ru/">
     <meta property="og:url" content="https://ctrlsh0t.ru/">
@@ -114,7 +33,7 @@
             <img src="SYNTZHONE.png" alt="synthzone" height="100">
             <img src="SYNTZHONE.png" alt="synthzone" height="100"> <br>
             <button onclick="clos()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px; ">СЛУШАТЬ ВЕЗДЕ</button> <br>
-            <button onclick="clos()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">СЛУШАТЬ ВЕЗДЕ</button> <br>
+            <button onclick="closer()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">НЕТ!!</button> <br>
         </div>
     </dialog>
 
@@ -133,6 +52,16 @@
         <!--    ⚠️ ВНИМАНИЕ! САЙТ В РАЗРАБОТКЕ (КАК И НАША КАРЬЕРА) ⚠️-->
         <!--</div>-->
         
+        <H2>НОВЫЙ АЛЬБОМ НА ХЭЛЛОУИН СПЕЦИАЛЬНЫЙ ПОДАРОК ВАМ</H2>
+        <div class="player">
+            <div style="font-size: 24px;">WIPELL - HALLOWEEN SPECIAL</div>
+            <H3>3 ОКТЯБРЯ, 2025</H3>
+            <div class="track">🎵 1. ТАМ СЛИШКОМ МНОГО ТРЕКОВ!! МНЕ ЛЕНЬ ИХ ПЕРЕЧИСЛИТЬ!!! ИДИ СЛУШАЙ!!! СПАСИБО!!!</div>
+
+            <div class="track">ХОЧЕШЬ УВИДЕТЬ БОЛЬШЕ? 👇</div>
+            <a href="https://www.youtube.com/watch?v=Avl3ealHBFA"><button style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">СЛУШАТЬ ЮТУБЕ [ПОКА-ЧТО]</button></a>
+        </div>
+
                          <h1>НОВЫЙ <g style="color: red;">ВЕЛИКИЙ</g> АЛЬБОМ:</h1>
         <div class="player">
             <div style="font-size: 24px;">«Synthzone»</div>
@@ -192,6 +121,7 @@
 
         <div class="player">
             <div style="font-size: 24px;">«bipolar»</div>
+            <H3>12 ИЮЛЯ, 2025</H3>
             <div class="track">🎵 1. breaking the core</div>
             <div class="track">🎵 2. break-up</div>
             <div class="track">🎵 3. fugitive energy</div>

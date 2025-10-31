@@ -1,91 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="/favicon.webp" type="image/webp">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <meta charset="utf-8">
     <title>CTRL_SH0T — ОФИЦИАЛЬНЫЙ САЙТ (НЕТ)</title>
-    <style>
-        body {
-            background: #000 url('https://i.imgur.com/X6Qe6D2.gif') repeat;
-            font-family: 'Comic Sans MS', 'Arial', sans-serif;
-            color: #0f0;
-            margin: 0;
-            padding: 0;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="0" y="28" font-size="28">👆</text></svg>'), auto;
-        }
-        .header {
-            background: linear-gradient(to right, #ff00ff, #00ffff);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px dotted #fff;
-        }
-        .logo {
-            font-size: 48px;
-            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
-            animation: blink 1s infinite;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px;
-        }
-        .menu a {
-            background: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border: 2px solid #0f0;
-            border-radius: 0;
-            font-weight: bold;
-        }
-        .menu a:hover {
-            background: #0f0;
-            color: #000;
-            transform: rotate(5deg);
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border: 3px dashed #ff0;
-        }
-        .player {
-            background: #000;
-            padding: 20px;
-            margin: 20px 0;
-            border: 3px solid #f0f;
-        }
-        .track {
-            color: #0ff;
-            margin: 10px 0;
-        }
-        .merch-item {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
-        .merch-item img {
-            border: 3px solid #f00;
-            image-rendering: pixelated;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-        .blink {
-            animation: blink 1s infinite;
-        }
-        .construction {
-            background: #ff0;
-            color: #000;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
 
         <meta property="og:title" content="Страница с мерчом">
     <meta property="og:site_name" content="https://ctrlsh0t.ru/">
@@ -107,7 +27,7 @@
         <a href="about.html">О НАС (СКУЧНО)</a>
     </div>
 
-        <dialog newa>
+    <dialog newa>
         <div><p style="font-size: 9px;">BREAKING NEWS</p>
             <h1>НОВЫЙ АЛЬБОМ! <br> SYNTHZONE</h1>
             <p>19 УЛЬТРА-КРУТЫХ ТРЕКОВ!!! <br> ТАМ ЕСТЬ ВСЕ!!!!</p>
@@ -115,7 +35,7 @@
             <img src="SYNTZHONE.png" alt="synthzone" height="100">
             <img src="SYNTZHONE.png" alt="synthzone" height="100"> <br>
             <button onclick="clos()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px; ">СЛУШАТЬ ВЕЗДЕ</button> <br>
-            <button onclick="clos()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">СЛУШАТЬ ВЕЗДЕ</button> <br>
+            <button onclick="closer()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">НЕТ!!</button> <br>
         </div>
     </dialog>
 
@@ -137,27 +57,21 @@
 
 
 
-        <h1>МЕРЧ:</h1>
+                <h1>ВЕЛИЧАЙШИЙ МЕРЧ МЕРЧ:</h1>
         <div class="merch-item">
-            <img src="https://i.imgur.com/JR7qF0s.png" width="150" alt="Футболка">
+            <img src="6bc9e563-7667-41fe-a308-263e586f48ff.jpeg" width="150" alt="Футболка">
             <div>"Я слушал CTRL_SH0T и выжил"</div>
             <div>Цена: ♫♫♫ руб.</div>
         </div>
         <div class="merch-item">
-            <img src="https://i.imgur.com/5QvVZbT.png" width="150" alt="Футболка">
+            <img src="df13275f-b73c-4d01-b928-17f27d84e975.jpeg" width="150" alt="Футболка">
             <div>"Это не мерч, это арт-протест (нет)"</div>
             <div>Цена: ERROR руб.</div>
         </div>
         <div class="merch-item">
-            <img src="https://i.imgur.com/5QvVZbT.png" width="150" alt="Футболка">
+            <img src="161e50c5-d83e-4c09-913e-e5e9399d7948.jpeg" width="150" alt="Футболка">
             <div>"OMEGA FLEX напиток газированный"</div>
             <div>Цена: ERROR руб.</div>
         </div>
-
-        <div style="text-align: center; margin-top: 30px;">
-            <img src="https://i.imgur.com/3YL5P3A.gif" alt="Танцующий смайл">
-            <div class="blink">© 2025 CTRL_SH0T — Все права защищены (нет)</div>
-        </div>
-    </div>
 </body>
 </html>

@@ -1,91 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="/favicon.webp" type="image/webp">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <meta charset="utf-8">
     <title>CTRL_SH0T — ОФИЦИАЛЬНЫЙ САЙТ (НЕТ)</title>
-    <style>
-        body {
-            background: #000 url('https://i.imgur.com/X6Qe6D2.gif') repeat;
-            font-family: 'Comic Sans MS', 'Arial', sans-serif;
-            color: #0f0;
-            margin: 0;
-            padding: 0;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="0" y="28" font-size="28">👆</text></svg>'), auto;
-        }
-        .header {
-            background: linear-gradient(to right, #ff00ff, #00ffff);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px dotted #fff;
-        }
-        .logo {
-            font-size: 48px;
-            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
-            animation: blink 1s infinite;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px;
-        }
-        .menu a {
-            background: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border: 2px solid #0f0;
-            border-radius: 0;
-            font-weight: bold;
-        }
-        .menu a:hover {
-            background: #0f0;
-            color: #000;
-            transform: rotate(5deg);
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border: 3px dashed #ff0;
-        }
-        .player {
-            background: #000;
-            padding: 20px;
-            margin: 20px 0;
-            border: 3px solid #f0f;
-        }
-        .track {
-            color: #0ff;
-            margin: 10px 0;
-        }
-        .merch-item {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
-        .merch-item img {
-            border: 3px solid #f00;
-            image-rendering: pixelated;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-        .blink {
-            animation: blink 1s infinite;
-        }
-        .construction {
-            background: #ff0;
-            color: #000;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
@@ -101,7 +21,7 @@
         <a href="about.html">О НАС (СКУЧНО)</a>
     </div>
 
-        <dialog newa>
+    <dialog newa>
         <div><p style="font-size: 9px;">BREAKING NEWS</p>
             <h1>НОВЫЙ АЛЬБОМ! <br> SYNTHZONE</h1>
             <p>19 УЛЬТРА-КРУТЫХ ТРЕКОВ!!! <br> ТАМ ЕСТЬ ВСЕ!!!!</p>
@@ -109,7 +29,7 @@
             <img src="SYNTZHONE.png" alt="synthzone" height="100">
             <img src="SYNTZHONE.png" alt="synthzone" height="100"> <br>
             <button onclick="clos()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px; ">СЛУШАТЬ ВЕЗДЕ</button> <br>
-            <button onclick="clos()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">СЛУШАТЬ ВЕЗДЕ</button> <br>
+            <button onclick="closer()" style="background: #0f0; color: #000; border: none; padding: 10px 20px; font-weight: bold; margin-top: 10px; width: 300px;">НЕТ!!</button> <br>
         </div>
     </dialog>
 
@@ -132,26 +52,29 @@
 
 
         <h1>О НАС</h1>
-        <p>Гой, которого мы прогрели на создание обложек: <a href="https://t.me/gycctart">GREY GATTO</a></p>
+        <p style="font-size: larger;">Мы - группа которая делает эксперементальную EDM и не очень. Основались в Ноябре 2024</p>
+        <h style="color: rgb(198, 255, 198); font-size: smaller;"><p>Гой, которого мы прогрели на создание обложек: <a href="https://t.me/gycctart">GREY GATTO</a></p>
         <p>Что-то понимает в музыке: <a href="https://www.youtube.com/@gogol_gogovich">GOGOL_GOGOVICH</a>  (не ведет социальную жизнь)</p>
-        <p>Гей, которого мы проиграли на создание крутой музыки:<a href="https://glomble.com/profiles/eKBmph6hUG9E">  DRP403 </a></p>
-        <p>Ну и конечно, самый крутой владелец группу OWNER: Losba (тоже не ведет социальную жизнь) </p>
+        <p>Гой, которого мы проиграли на создание крутой музыки:<a href="https://glomble.com/profiles/eKBmph6hUG9E">  DRP403 </a></p>
+        <p>Ну и конечно, самый крутой владелец группу OWNER: Losba (тоже не ведет социальную жизнь) </p> </h>
         <p>рабочий емэил <b>Makxks@yandex.ru</b></p>
 
+
+        <h1>НАШИ СОЦ. СЕТИ:</h1>
         <div class="merch-item">
-            <img src="https://i.imgur.com/JR7qF0s.png" width="150" alt="ТЕЛЕГРАМ">
+            <img src="https://avatars.mds.yandex.net/i?id=d91a2767e0e794c1a42d78357421c046bf3c4f8a-5503185-images-thumbs&n=13" width="150" alt="ТЕЛЕГРАМ">
             <div>ТЕЛЕГРАМ ВОТ ССЫЛКА</div>
-            <div><a href="https://t.me/ctrl_sh00t">[ГИПЕР ССЫЛКА ЗАБЛОКИРОВАНА]</a></div>
+            <div><a href="https://t.me/ctrl_sh00t">[ГИПЕР ССЫЛКА НЕ ЗАБЛОКИРОВАНА]</a></div>
         </div>
         <div class="merch-item">
-            <img src="https://i.imgur.com/5QvVZbT.png" width="150" alt="Футболка">
+            <img src="https://yt3.googleusercontent.com/bBa6kQfAVwE4zsRkE8k6Y_O_fhdM8ix9v0babqsbGdHLwQAc8_sx2vkftmq9PKooVbmANKYp=s160-c-k-c0x00ffffff-no-rj" width="150" alt="Футболка">
             <div>ЮТУБ</div>
             <div><a href="https://www.youtube.com/@CTRL_SH0T">[ГИПЕР ССЫЛКА НЕ ЗАБЛОКИРОВАНА]</a></div>
         </div>
         
                 <div class="merch-item">
-            <img src="https://i.imgur.com/5QvVZbT.png" width="150" alt="Футболка">
-            <div>БУСТИ</div>
+            <img src="https://avatars.mds.yandex.net/i?id=1b2b78530416341fcc29e5c564790364fa211436-5530840-images-thumbs&n=13" width="150" alt="Футболка" style="padding: 10PX;">
+            <div>БУСТИ [ТАМ НЕТ КОНТЕНТА]</div>
             <div><a href="https://boosty.to/ctrl_sh0t">[ГИПЕР ССЫЛКА НЕ ЗАБЛОКИРОВАНА]</a></div>
         </div>
 
